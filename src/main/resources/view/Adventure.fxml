@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox fx:id="vBox" fx:controller="controller.AdventureController" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <GridPane fx:id="gridPaneUpper">
+      <children>
+
+         <ScrollPane fx:id="scrollPane" GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <TextFlow fx:id="textFlow" />
+         </ScrollPane>
+
+      </children>
+      <rowConstraints>
+         <RowConstraints vgrow="NEVER" minHeight="%borderHeightUpper" maxHeight="%borderHeightUpper" />
+         <RowConstraints vgrow="ALWAYS" />
+         <RowConstraints vgrow="NEVER" minHeight="%borderHeightUpper" maxHeight="%borderHeightUpper" />
+      </rowConstraints>
+      <columnConstraints>
+         <ColumnConstraints hgrow="NEVER" minWidth="%borderWidthUpper" maxWidth="%borderWidthUpper" />
+         <ColumnConstraints hgrow="ALWAYS" />
+         <ColumnConstraints hgrow="NEVER" minWidth="%borderWidthUpper" maxWidth="%borderWidthUpper" />
+      </columnConstraints>
+   </GridPane>
+   <GridPane fx:id="gridPaneLower">
+      <children>
+         <TextField fx:id="textField" onAction="#onEnter" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+      </children>
+      <rowConstraints>
+         <RowConstraints vgrow="NEVER" minHeight="%borderHeightLower" maxHeight="%borderHeightLower" />
+         <RowConstraints vgrow="NEVER" />
+         <RowConstraints vgrow="NEVER" minHeight="%borderHeightLower" maxHeight="%borderHeightLower" />
+      </rowConstraints>
+      <columnConstraints>
+         <ColumnConstraints hgrow="NEVER" minWidth="%borderWidthLower" maxWidth="%borderWidthLower" />
+         <ColumnConstraints hgrow="ALWAYS" />
+         <ColumnConstraints hgrow="NEVER" minWidth="%borderWidthLower" maxWidth="%borderWidthLower" />
+      </columnConstraints>
+   </GridPane>
+</VBox>
